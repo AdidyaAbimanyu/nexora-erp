@@ -1,0 +1,8 @@
+Phase 1	System architecture, database, authentication
+Phase 2	Organization & employee management
+Phase 3	Inventory management
+Phase 4	Procurement & approval workflow
+Phase 5	Finance management
+Phase 6	Project management
+Phase 7	Reporting & analytics
+Phase 8	Security hardening, testing, deployment
