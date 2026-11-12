@@ -1,5 +1,6 @@
-
 import Link from "next/link";
+import LogoutButton from "@/components/auth/logout-button";
+
 import {
   LayoutDashboard,
   Users,
@@ -95,11 +96,10 @@ export default function Sidebar() {
                   <Link
                     key={item.label}
                     href={item.href}
-                    className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-colors ${
-                      active
+                    className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-colors ${active
                         ? "bg-blue-600 text-white shadow-sm"
                         : "text-slate-400 hover:bg-slate-800 hover:text-white"
-                    }`}
+                      }`}
                   >
                     <Icon size={18} />
                     <span>{item.label}</span>
@@ -119,6 +119,10 @@ export default function Sidebar() {
           <Settings size={18} />
           Settings
         </Link>
+
+        <div className="mt-2">
+          <LogoutButton />
+        </div>
 
         <div className="mt-4 flex items-center gap-3 border-t border-slate-800 pt-4">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-slate-700 text-sm font-semibold text-white">
