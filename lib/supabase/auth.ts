@@ -27,3 +27,11 @@ export async function requireAuth() {
 
   return user;
 }
+
+export async function redirectIfAuthenticated() {
+  const user = await getAuthenticatedUser();
+
+  if (user) {
+    redirect("/dashboard");
+  }
+}
